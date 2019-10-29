@@ -1,11 +1,14 @@
 {
-  "name": "ss-to-jsx",
+  "name": "ss-to-react",
   "version": "0.0.1",
   "description": "Convert SS templates to react components",
   "main": "index.js",
   "repository": "https://github.com/unclecheese/ss-to-react",
   "author": "Uncle Cheese",
   "license": "MIT",
+  "bin": {
+  	"ss-to-react": "./index.js"
+  },
   "private": false,
   "dependencies": {
     "glob": "^7.1.4",
