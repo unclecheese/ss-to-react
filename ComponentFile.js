@@ -95,7 +95,8 @@ class ComponentFile {
 				let propStr = '';
 				if (typeof args === 'string') {
 					const propNames = args.match(/([A-Za-z0-9_]+)=/g).map(match => {
-						return match.match(/^([A-Za-z0-9_]+)/)[1];
+						return match.match(/^([A-Za-z0-9_]+)/)[1]
+							.replace(/^\w/, c => c.toLowerCase());
 					});
 					const propValues = args.match(/="?(.+?)(,|$)"?/g).map(match => {
 						return match.match(/=(.+?)(,|$)/)[1];
