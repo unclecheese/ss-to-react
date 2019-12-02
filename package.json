@@ -7,10 +7,11 @@
   "author": "Uncle Cheese",
   "license": "MIT",
   "bin": {
-  	"ss-to-react": "./index.js"
+    "ss-to-react": "./index.js"
   },
   "private": false,
   "dependencies": {
+    "dom-parser": "^0.1.6",
     "glob": "^7.1.4",
     "htmltojsx": "^0.3.0",
     "yargs": "^14.2.0"
